@@ -16,10 +16,11 @@ collections:
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "date" }
       - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "artists"
     label: "Artists"
     folder: "artists"
     create: true
     slug: "{{slug}}"
-    field:
+    fields:
       - { label: "Name", name: "name", widget: "string" }
