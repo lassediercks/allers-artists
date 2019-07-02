@@ -27,7 +27,7 @@ collections:
       - label: "Beschreibung"
         name: "description"
         widget: "string"
-      - label: Bilder
-        name: pictures
+      - label: "Bilder"
+        name: "pictures"
         widget: "list"
-        field: { label: Bild, name: picture, widget: image }
+        field: { label: Bild, name: "picture", widget: "image" }
