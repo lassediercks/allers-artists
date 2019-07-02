@@ -8,6 +8,7 @@ public_folder: "/uploads"
 collections:
   - name: "artists"
     label: "artists"
+    identifier_field: "artists"
     folder: "artists"
     create: true
     slug: "{{slug}}"
