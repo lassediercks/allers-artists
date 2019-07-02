@@ -29,8 +29,7 @@ collections:
         widget: "string"
       - label: "Bilder"
         name: "pictures"
-        widget: "object"
-        fields:
-          - label: "Bild"
-            name: "picture"
-            widget: "image"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
