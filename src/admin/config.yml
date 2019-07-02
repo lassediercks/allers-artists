@@ -14,4 +14,4 @@ collections:
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Beschreibung", name: "description", widget: "string" }
-      - { label: "Bild", name: "picture", widget: "Image" }
+      - { label: "Bild", name: "picture", widget: "image" }
