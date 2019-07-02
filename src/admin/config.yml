@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your_name/repo_name
+  repo: lassediercks/allers-artists
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
