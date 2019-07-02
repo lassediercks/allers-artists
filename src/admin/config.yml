@@ -24,3 +24,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
+      - label: "Beschreibung"
+        name: "description"
+        widget: "string"
+      - label: "Bilder"
+        name: "pictures"
+        widget: "object"
+        fields:
+          - label: "Bild"
+            name: "picture"
+            widget: "image"
