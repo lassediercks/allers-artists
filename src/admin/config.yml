@@ -1,18 +1,25 @@
 backend:
   name: github
-  repo: lassediercks/allers-artists
+  repo: your_name/repo_name
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "artists"
-    label: "artists"
-    identifier_field: "artists"
-    folder: "artists"
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "artists"
+    label: "Artists"
+    folder: "artists"
+    create: true
+    slug: "{{slug}}"
+    field:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Beschreibung", name: "description", widget: "string" }
-      - { label: "Bild", name: "picture", widget: "image" }
