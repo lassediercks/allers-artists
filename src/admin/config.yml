@@ -27,9 +27,7 @@ collections:
       - label: "Beschreibung"
         name: "description"
         widget: "string"
-      - label: "Bilder"
-        name: "pictures"
-        widget: "image"
-        media_library:
-          config:
-            multiple: true
+      - label: Bilder
+        name: pictures
+        widget: "list"
+        field: { label: Bild, name: picture, widget: image }
