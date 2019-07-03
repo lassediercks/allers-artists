@@ -10,7 +10,26 @@ query Artist ($id: String!) {
   artist: artist (id: $id){
     name,
     id,
-    pictures
+    pictures,
+    vita{
+			entry{
+        year,
+        description
+      }
+    },
+    bio{
+      entry{
+        description,
+        content
+      }
+    },
+    theater{
+      entry{
+        year,
+        name,
+        description
+      }
+    }
   }
 }
 </page-query>
