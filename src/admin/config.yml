@@ -19,15 +19,16 @@ collections:
 
   - name: "artists"
     label: "Artists"
+    identifier_field: artist
     folder: "artists"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - label: "Beschreibung"
-        name: "description"
-        widget: "string"
-      - label: "Bilder"
-        name: "pictures"
-        widget: "list"
-        field: { label: Bild, name: "picture", widget: "image" }
+      - { label: "Beschreibung", name: "description", widget: "string" }
+      - {
+          label: "Bilder",
+          name: "pictures",
+          widget: "list",
+          field: { label: Bild, name: "picture", widget: "image" },
+        }
