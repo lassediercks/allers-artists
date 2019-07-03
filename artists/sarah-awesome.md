@@ -14,5 +14,14 @@ bio:
   - entry:
       content: auch gut
       description: Ausbildung
+education:
+  - entry:
+      content: Viel gelernt
+      year: '1029'
+theater:
+  - entry:
+      name: Krimi theater st pauli
+      description: tolles schauspiel
+      year: '2019'
 ---
 
