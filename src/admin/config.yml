@@ -21,3 +21,13 @@ collections:
           widget: "list",
           field: { label: Bild, name: "picture", widget: "image" },
         }
+      - label: Vita
+        name: vita
+        widget: "list"
+        fields:
+          - label: "Eintrag"
+            name: "entry"
+            widget: "object"
+            fields:
+              - { label: "Jahr", name: "year", widget: "string" }
+              - { label: "Beschreibung", name: "description", widget: "string" }
