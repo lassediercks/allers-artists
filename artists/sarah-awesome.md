@@ -11,5 +11,8 @@ bio:
   - entry:
       content: Gut
       description: 'Schule:'
+  - entry:
+      content: auch gut
+      description: Ausbildung
 ---
 
