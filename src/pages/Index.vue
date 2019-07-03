@@ -1,8 +1,7 @@
 <template>
   <Layout>
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-    <div v-for="artists in $page.posts.edges" :key="artists.node.id">
-      <h2>{{ artists.node.title }}</h2>
+    <div v-for="artist in $page.artists.edges" :key="artist.node.name">
+      <a :href="`artist/${artist.node.id}`">{{ artist.node.name }}</a>
     </div>
   </Layout>
 </template>
@@ -16,11 +15,12 @@ export default {
 </script>
 
 <page-query>
-query Posts {
-  posts: allPost {
+query Artists {
+  artists: allArtist {
     edges {
       node { 
-        title
+        name
+        id
       }
     }
   }

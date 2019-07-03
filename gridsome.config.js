@@ -21,20 +21,9 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "posts/**/*.md",
-        typeName: "Post",
-        remark: {
-          plugins: [
-            // ...local plugins
-          ]
-        }
-      }
-    },
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
         path: "artists/**/*.md",
         typeName: "Artist",
+        route: "/artist/:id",
         remark: {
           plugins: [
             // ...local plugins
