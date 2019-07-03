@@ -7,5 +7,12 @@ vita:
   - entry:
       description: So
       year: '2019'
+bio:
+  - entry:
+      content: Gut
+      description: 'Schule:'
+  - entry:
+      content: auch gut
+      description: Ausbildung
 ---
 
