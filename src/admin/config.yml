@@ -19,7 +19,7 @@ collections:
 
   - name: "artists"
     label: "Artists"
-    identifier_field: artist
+    identifier_field: name
     folder: "artists"
     create: true
     slug: "{{slug}}"
