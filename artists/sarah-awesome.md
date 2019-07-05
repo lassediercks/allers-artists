@@ -1,12 +1,9 @@
 ---
 name: Sarah Awesome
-description: Auch dufte
+profileimage: /uploads/cosmo-14-26-38_02-jun-19.jpg
+description: Auch dufte type
 pictures:
   - /uploads/cosmo-14-26-38_02-jun-19.jpg
-vita:
-  - entry:
-      description: So
-      year: '2019'
 bio:
   - entry:
       content: Gut
@@ -14,6 +11,10 @@ bio:
   - entry:
       content: auch gut
       description: Ausbildung
+vita:
+  - entry:
+      description: So
+      year: '2019'
 education:
   - entry:
       content: Viel gelernt
