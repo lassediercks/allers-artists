@@ -16,10 +16,9 @@ vita:
       description: So
       year: '2019'
 repertoire:
-  - entry:
-      name: Nach Vorne in die Vergangheit
-      description: Hauptrolle
-      year: '2020'
+  - name: Zurück in die Vergangenheit
+    description: 'Huaptrolle, Walter Moerss'
+    year: '2019'
 videos:
   - description: Damals im Walde
     file: /uploads/whatsapp-video-2019-07-04-at-18.31.47.mp4
