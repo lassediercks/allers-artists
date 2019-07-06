@@ -4,6 +4,10 @@ profileimage: /uploads/cosmo-14-26-38_02-jun-19.jpg
 description: Auch dufte type
 pictures:
   - /uploads/cosmo-14-26-38_02-jun-19.jpg
+hashtags:
+  - tag: Singer
+  - tag: Opera
+  - tag: Theater
 bio:
   - content: '1982'
     description: Geburtsjahr
