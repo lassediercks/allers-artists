@@ -21,6 +21,7 @@ repertoire:
       description: Hauptrolle
       year: '2020'
 videos:
-  - entry: /uploads/whatsapp-video-2019-07-04-at-18.31.47.mp4
+  - description: Damals im Walde
+    file: /uploads/whatsapp-video-2019-07-04-at-18.31.47.mp4
 ---
 
