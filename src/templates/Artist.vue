@@ -3,8 +3,33 @@
     <h1>{{$page.artist.name}}</h1>
 
     <img :src="$page.artist.profileimage" alt />
-    <h2>data:</h2>
-    <div>{{$page.artist}}</div>
+    <h2>Steckbrief</h2>
+    <ul>
+      <li
+        v-for="bio in $page.artist.bio"
+        :key="bio.description"
+      >{{bio.description}}: {{bio.content}}</li>
+    </ul>
+    <h2>Vita:</h2>
+    <ul>
+      <li
+        v-for="vita in $page.artist.vita"
+        :key="vita.description"
+      >{{vita.year}}: {{vita.description}}</li>
+    </ul>
+    <h2>Repertoire</h2>
+    <ul>
+      <li
+        v-for="repertoire in $page.artist.repertoire"
+        :key="repertoire.description"
+      >{{repertoire.year}}: {{repertoire.name}} {{repertoire.description}}</li>
+    </ul>
+    <h2>Videos:</h2>
+    <ul>
+      <li v-for="video in $page.artist.videos" :key="video.description">
+        <a :href="video.file">{{video.description}}</a>
+      </li>
+    </ul>
   </Layout>
 </template>
 
@@ -17,23 +42,21 @@ query Artist ($id: String!) {
     profileimage,
     pictures,
     vita{
-			entry{
         year,
         description
-      }
     },
     bio{
-      entry{
         description,
         content
-      }
     },
-    theater{
-      entry{
-        year,
-        name,
-        description
-      }
+    repertoire{
+      year,
+      name, 
+      description
+    },
+    videos{
+      description,
+      file
     }
   }
 }

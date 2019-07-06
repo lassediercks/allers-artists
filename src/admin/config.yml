@@ -27,40 +27,31 @@ collections:
         name: bio
         widget: "list"
         fields:
-          - label: "Eintrag"
-            name: "entry"
-            widget: "object"
-            fields:
-              - { label: "Beschreibung", name: "description", widget: "string" }
-              - { label: "Inhalt", name: "content", widget: "string" }
+          - { label: "Beschreibung", name: "description", widget: "string" }
+          - { label: "Inhalt", name: "content", widget: "string" }
       - label: Vita
         name: vita
         widget: "list"
         fields:
-          - label: "Eintrag"
-            name: "entry"
-            widget: "object"
-            fields:
-              - { label: "Jahr", name: "year", widget: "string" }
-              - { label: "Beschreibung", name: "description", widget: "string" }
-      - label: Ausbildung
-        name: education
+          - { label: "Jahr", name: "year", widget: "string" }
+          - { label: "Beschreibung", name: "description", widget: "string" }
+      - label: Repertoire
+        name: repertoire
         widget: "list"
         fields:
-          - label: "Eintrag"
-            name: "entry"
-            widget: "object"
-            fields:
-              - { label: "Jahr", name: "year", widget: "string" }
-              - { label: "Inhalt", name: "content", widget: "string" }
-      - label: Theater
-        name: theater
+          - { label: "Jahr", name: "year", widget: "string" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Beschreibung", name: "description", widget: "string" }
+      - label: Videos
+        name: videos
         widget: "list"
         fields:
-          - label: "Eintrag"
-            name: "entry"
-            widget: "object"
-            fields:
-              - { label: "Jahr", name: "year", widget: "string" }
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Beschreibung", name: "description", widget: "string" }
+          - label: "Beschreibung"
+            name: "description"
+            widget: "string"
+          - label: "Datei"
+            name: "file"
+            widget: "file"
+            media_library:
+              config:
+                multiple: true
