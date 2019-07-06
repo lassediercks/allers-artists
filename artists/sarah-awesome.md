@@ -5,16 +5,13 @@ description: Auch dufte type
 pictures:
   - /uploads/cosmo-14-26-38_02-jun-19.jpg
 bio:
-  - entry:
-      content: Gut
-      description: 'Schule:'
-  - entry:
-      content: auch gut
-      description: Ausbildung
+  - content: '1982'
+    description: Geburtsjahr
+  - content: Alien
+    description: Eth. Herkunft
 vita:
-  - entry:
-      description: So
-      year: '2019'
+  - description: Film des Lebens
+    year: '2001'
 repertoire:
   - name: Zurück in die Vergangenheit
     description: 'Huaptrolle, Walter Moerss'
