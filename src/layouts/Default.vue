@@ -1,13 +1,33 @@
 <template>
   <div class="layout">
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
     <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>
+      <g-link class="logo" to="/">{{ $static.metaData.siteName }}</g-link>
     </header>
     <slot />
   </div>
 </template>
+
+<script>
+export default {
+  metaInfo: {
+    link: [
+      {
+        href:
+          "https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap",
+        rel: "stylesheet"
+      },
+      {
+        href: "https://use.typekit.net/ozp3msn.css",
+        rel: "stylesheet"
+      }
+    ]
+  }
+};
+</script>
 
 <static-query>
 query {
@@ -18,12 +38,23 @@ query {
 </static-query>
 
 <style>
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
+}
+.logo {
+  font-family: "Abril Fatface", cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 .layout {

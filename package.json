@@ -12,5 +12,10 @@
     "gridsome": "^0.6.0",
     "gridsome-plugin-netlify-cms": "^1.0.8",
     "netlify-cms": "^2.9.5"
+  },
+  "devDependencies": {
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "sass-loader": "^7.1.0"
   }
 }

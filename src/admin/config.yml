@@ -22,7 +22,17 @@ collections:
           widget: "list",
           field: { label: Bild, name: "picture", widget: "image" },
         }
-
+      - label: Tags
+        name: hashtags
+        widget: list
+        fields:
+          - label: "Hashtags"
+            name: "tag"
+            widget: "relation"
+            collection: "tags"
+            searchFields: ["name"]
+            valueField: "name"
+            displayFields: ["name"]
       - label: Steckbrief
         name: bio
         widget: "list"
@@ -55,3 +65,13 @@ collections:
             media_library:
               config:
                 multiple: true
+  - name: "tags"
+    label: "Hashtags"
+    identifier_field: name
+    folder: "hashtags"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "string"
