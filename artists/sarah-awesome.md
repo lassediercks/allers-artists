@@ -15,14 +15,12 @@ vita:
   - entry:
       description: So
       year: '2019'
-education:
+repertoire:
   - entry:
-      content: Viel gelernt
-      year: '1029'
-theater:
-  - entry:
-      name: Krimi theater st pauli
-      description: tolles schauspiel
-      year: '2019'
+      name: Nach Vorne in die Vergangheit
+      description: Hauptrolle
+      year: '2020'
+videos:
+  - entry: /uploads/whatsapp-video-2019-07-04-at-18.31.47.mp4
 ---
 
