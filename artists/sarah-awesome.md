@@ -1,5 +1,5 @@
 ---
-name: Sarah Awesome
+name: Sarah Beautiful
 profileimage: /uploads/cosmo-14-26-38_02-jun-19.jpg
 description: Auch dufte type
 pictures:
