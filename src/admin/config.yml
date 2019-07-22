@@ -6,6 +6,33 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Startseite"
+        name: "home"
+        file: "pages/index.md"
+        fields:
+          - { label: "Über uns", name: "aboutus", widget: "markdown" }
+          - { label: "David Text", name: "david", widget: "markdown" }
+          - { label: "David Profilbild", name: "davidImage", widget: "image" }
+
+      - label: "Impressum"
+        name: "imprint"
+        file: "pages/imprint.md"
+        fields:
+          - { label: "Adresse", name: "adress", widget: "markdown" }
+
+      - label: "Datenschutz"
+        name: "privacy"
+        file: "pages/privacy.md"
+        fields:
+          - {
+              label: "Datenschutzerklärung",
+              name: "datatext",
+              widget: "markdown",
+            }
+
   - name: "artists"
     label: "Artists"
     identifier_field: name

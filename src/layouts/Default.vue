@@ -1,9 +1,5 @@
 <template>
   <div class="layout">
-    <link
-      href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap"
-      rel="stylesheet"
-    />
     <header class="header">
       <g-link class="logo" to="/">{{ $static.metaData.siteName }}</g-link>
     </header>
@@ -23,6 +19,10 @@ export default {
       {
         href: "https://use.typekit.net/ozp3msn.css",
         rel: "stylesheet"
+      },
+      {
+        href: "https://fonts.googleapis.com/css?family=Rock+Salt&display=swap",
+        rel: "stylesheet"
       }
     ]
   }
@@ -41,9 +41,12 @@ query {
 * {
   box-sizing: border-box;
 }
+:root {
+  --artist-name-font: "Rock Salt", cursive;
+}
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: "Now", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -53,7 +56,7 @@ body {
   text-decoration: none;
   color: black;
   font-size: 30px;
-  margin: 0 auto;
+  margin: 0;
   display: inline-block;
 }
 
