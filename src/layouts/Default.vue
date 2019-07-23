@@ -1,14 +1,19 @@
 <template>
   <div class="layout">
     <header class="header">
-      <g-link class="logo" to="/">{{ $static.metaData.siteName }}</g-link>
+      <g-link class="logo" to="/">
+        <Logo :alt="$static.metaData.siteName"></Logo>
+      </g-link>
     </header>
     <slot />
   </div>
 </template>
 
 <script>
+import Logo from "../components/Logo.vue";
+
 export default {
+  components: { Logo },
   metaInfo: {
     link: [
       {
@@ -42,11 +47,12 @@ query {
   box-sizing: border-box;
 }
 :root {
-  --artist-name-font: "Rock Salt", cursive;
+}
+html {
+  font-size: 20px;
 }
 body {
-  font-family: "Now", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: proxima-nova, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -63,16 +69,13 @@ body {
 .layout {
   max-width: 760px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
+  padding: 1em 1.5em 5em;
 }
 
 .nav__link {
