@@ -41,6 +41,12 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
+      - {
+          label: gender,
+          name: "Geschlecht",
+          widget: "select",
+          options: ["Frau", "Mann"],
+        }
       - { label: "Profilbild", name: "profileimage", widget: "image" }
       - { label: "Beschreibung", name: "description", widget: "string" }
       - {

@@ -37,8 +37,8 @@ export default {
   text-decoration: none;
   display: flex;
   align-items: flex-end;
-  width: calc(100vw - 1.5rem);
-  height: 10rem;
+  width: 25vw;
+  height: 25vw;
   background-size: cover;
   background-position: center center;
 }
