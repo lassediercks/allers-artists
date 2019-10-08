@@ -6,6 +6,10 @@
       </g-link>
     </header>
     <slot />
+    <footer>
+      <g-link to="/impressum">Impressum</g-link>
+      <g-link to="/datenschutz">Datenschutz</g-link>
+    </footer>
   </div>
 </template>
 
@@ -80,5 +84,13 @@ body {
 
 .nav__link {
   margin-left: 20px;
+}
+footer {
+  padding: 24px 0;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 16px;
 }
 </style>
