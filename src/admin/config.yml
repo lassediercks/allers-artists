@@ -24,13 +24,10 @@ collections:
           - { name: Content, widget: markdown }
       - label: "Datenschutz"
         name: "privacy"
-        file: "pages/privacy.md"
+        file: "pages/datenschutz.md"
         fields:
-          - {
-              label: "Datenschutzerklärung",
-              name: "datatext",
-              widget: "markdown",
-            }
+          - { name: "Title", widget: string }
+          - { name: Content, widget: markdown }
 
   - name: "artists"
     label: "Artists"
