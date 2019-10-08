@@ -33,6 +33,18 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
+        path: "pages/*.md",
+        typeName: "Site",
+        remark: {
+          plugins: [
+            // ...local plugins
+          ]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
         path: "artists/**/*.md",
         typeName: "Artist",
         route: "/artist/:id",

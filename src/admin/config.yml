@@ -16,13 +16,12 @@ collections:
           - { label: "Über uns", name: "aboutus", widget: "markdown" }
           - { label: "David Text", name: "david", widget: "markdown" }
           - { label: "David Profilbild", name: "davidImage", widget: "image" }
-
       - label: "Impressum"
-        name: "imprint"
+        name: imprint
         file: "pages/imprint.md"
         fields:
-          - { label: "Adresse", name: "adress", widget: "markdown" }
-
+          - { name: "Title", widget: string }
+          - { name: Content, widget: markdown }
       - label: "Datenschutz"
         name: "privacy"
         file: "pages/privacy.md"
