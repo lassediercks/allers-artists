@@ -23,14 +23,9 @@
           >{{vita.year}}: {{vita.description}}</li>
         </ul>
       </template>
-      <template v-if="$page.artist.repertoire != `` ">
+      <template v-if="$page.artist.repertoire">
         <h2>Repertoire</h2>
-        <ul>
-          <li
-            v-for="repertoire in $page.artist.repertoire"
-            :key="repertoire.description"
-          >{{repertoire.year}}: {{repertoire.name}} {{repertoire.description}}</li>
-        </ul>
+        <VueMarkdown>{{$page.artist.repertoire}}</VueMarkdown>
       </template>
       <template v-if="$page.artist.videos != `` ">
         <h2>Videos:</h2>
@@ -46,6 +41,7 @@
 
 <page-query>
 
+
 query Artist ($id: String!) {
   artist: artist (id: $id){
     name,
@@ -60,11 +56,8 @@ query Artist ($id: String!) {
         description,
         content
     },
-    repertoire{
-      year,
-      name, 
-      description
-    },
+    repertoire
+    
     videos{
       description,
       file
@@ -75,11 +68,14 @@ query Artist ($id: String!) {
 </page-query>
 
 <script>
+import VueMarkdown from "vue-markdown";
+
 import Layout from "~/layouts/Default.vue";
 
 export default {
   components: {
-    Layout
+    Layout,
+    VueMarkdown
   }
 };
 </script>
