@@ -1,5 +1,6 @@
 ---
-name: Sarah Beautiful
+name: Agnes Richter
+Geschlecht: Frau
 profileimage: /uploads/cosmo-14-26-38_02-jun-19.jpg
 description: Auch dufte type
 pictures:
