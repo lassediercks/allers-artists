@@ -1,8 +1,13 @@
 ---
-name: Aria Stark
-profileimage: /uploads/cosmo-16-35-46_16-jun-19.jpg
-description: Top typ
+name: Sarah Kuffner
+Geschlecht: Frau
+profileimage: /uploads/6r5a7489.jpg
+description: >-
+  So stellt man sich eine Opernsängerin vor. Ziemlich cool. Tolle Frau. Große
+  Stimme. Wumms.
 hashtags:
   - tag: Opera
+  - tag: Singer
+  - tag: Theater
 ---
 
