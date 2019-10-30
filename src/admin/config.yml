@@ -74,13 +74,11 @@ collections:
         fields:
           - { label: "Jahr", name: "year", widget: "string" }
           - { label: "Beschreibung", name: "description", widget: "string" }
+
       - label: Repertoire
         name: repertoire
-        widget: "list"
-        fields:
-          - { label: "Jahr", name: "year", widget: "string" }
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Beschreibung", name: "description", widget: "string" }
+        widget: "text"
+
       - label: Videos
         name: videos
         widget: "list"
