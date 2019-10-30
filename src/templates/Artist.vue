@@ -3,6 +3,7 @@
     <h1 class="name">{{$page.artist.name}}</h1>
 
     <img :src="$page.artist.profileimage" alt />
+    <img :src="picture" v-for="picture in $page.artist.pictures" alt :key="picture" />
     <div class="content">
       <template v-if="$page.artist.bio != `` ">
         <h2>Steckbrief</h2>

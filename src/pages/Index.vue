@@ -1,5 +1,7 @@
 <template>
   <Layout>
+    <p>{{$page.site.aboutus}}</p>
+
     <ArtistTile
       v-for="artist in $page.artists.edges"
       :key="artist.node.name"
@@ -9,6 +11,8 @@
       :src="artist.node.profileimage"
     ></ArtistTile>
     <h2>Über uns</h2>
+    {{$page.site.david}}
+    <g-image :src="$page.site.davidImage" alt />
   </Layout>
 </template>
 
@@ -25,7 +29,7 @@ export default {
 </script>
 <page-query>
 query Artists {
-  artists: allArtist {
+  artists: allArtist (sortBy: "gender", order: ASC) {
     edges {
       node { 
         name,
@@ -37,6 +41,11 @@ query Artists {
       }
     }
   }
+  site:  site(id: "3ff0627b4a78b86bb3d6ecf19a1580d1"){
+    aboutus,
+    david,
+    davidImage
+  },
 }
 </page-query>
 
@@ -50,6 +59,9 @@ query Artists {
 }
 .artist-image_wrap {
   position: relative;
+}
+img {
+  width: 100%;
 }
 </style>
 
