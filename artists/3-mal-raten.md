@@ -11,6 +11,7 @@ pictures:
 hashtags:
   - tag: musical
   - tag: Singer
+  - tag: actress
 bio:
   - content: >-
       Größe / 161 cm Schuhgröße / 37  Haarfarbe / braun  Augenfarbe /
