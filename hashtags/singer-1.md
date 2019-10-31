@@ -1,4 +1,4 @@
 ---
-name: Singer
+name: singer
 ---
 
