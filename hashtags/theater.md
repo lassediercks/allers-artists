@@ -1,4 +1,4 @@
 ---
-name: Theater
+name: theatre
 ---
 
