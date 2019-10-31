@@ -2,8 +2,13 @@
 name: Melina M'Poy Maine
 Geschlecht: Frau
 profileimage: /uploads/6r5a3381.jpg
-description: Top typ
+description: 'Niemand rifft stilvoller als sie. Wunderschön, innen und aussen.'
 hashtags:
-  - tag: Opera
+  - tag: actress
+  - tag: musical
+  - tag: singer
+repertoire: >-
+  repertoire is required? hab ich allerdings nur bei opernsängern, nicht bei
+  schauspielern oder musicalleuten
 ---
 
